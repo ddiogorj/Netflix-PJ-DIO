@@ -1,0 +1,25 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 5px;
+        width: 300px;
+    }
+    
+    .btn-pls {
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 50%;
+    }
+    
+}

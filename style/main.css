@@ -1,0 +1,129 @@
+/* Declaração de variaveis no css para reaproveitamento em outras partes*/
+:root {
+    --vermelho: #0918e5;
+    --preto: #2b2a29;
+}
+/* Realiza uma configuração global --  nesse caso chamado de reset*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; /* Define um limite para os elementos contidos dentro desta caixa*/
+}
+
+body {
+    background: var(--preto);
+    font-family: "Arial", Times, serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Aplica um espaço entre os elementos contidos em divs consecutivas*/
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.container {
+    margin: 20px;
+}
+
+header .logo {
+    color: var(--vermelho);
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+/* Forma usada para animar elementos da pagina exibindo uma formatação alternativa*/
+header nav a:hover{
+    color: #fff;   
+}
+
+/* Estilo do banner contendo a imagem principal*/
+ .filme-principal {
+     font-size: 16px;
+     background-image:
+     linear-gradient(rgba(0, 0, 0, 30%), rgba(0, 0, 0, 100%)), 
+     url("../img/bkg-luci.png");
+
+     height: 400px; /*define altura maxima para a imagem*/
+     background-size: cover; /*Cobre toda a div com a imagem selecionada*/
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .filme-principal .descricao {
+    margin-bottom: 20px;
+ }
+
+ .filme-principal .titulo {
+     padding-bottom: 15px;
+     font-size: 40px;
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+
+ .filme-principal .container {
+     width: 70%;
+ }
+ .filme-principal .container .sinopse{
+     font-size: 20px;
+     margin: 5px  0px 5px 0px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 300;
+ }
+
+ .filme-principal .container .diretor{
+    margin: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.filme-principal .container .made{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .btn {
+     background-color: #0000007f;
+     border: none;
+     color: #fff;
+
+     padding: 15px 30px;
+     margin: 20px;
+     font-size: 12px;
+
+     cursor: pointer;
+     transition: 1s ease all;
+ }
+
+ .btn:hover{
+     color: #000;
+     background-color: #fff;
+ }
+
+ .btn i{
+     margin-right: 8px;
+ }
+
+ .box-filme {
+     display: block;
+     height: 100%;
+     width: 100%;     
+}
+
+.carousel-filmes {
+    margin-top: 5px; 
+}
